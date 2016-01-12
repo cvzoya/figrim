@@ -8,7 +8,7 @@ Zoya Bylinskii, Phillip Isola, Constance Bainbridge, Antonio Torralba, Aude Oliv
 Project page: http://figrim.mit.edu
 
 ------------------------------------------------------------------
-Data download:
+#### Data download:
 
 [630 target images](http://figrim.mit.edu/Targets.zip)
 [Fixation maps](http://figrim.mit.edu/FIXATIONMAPS.zip)
@@ -17,7 +17,7 @@ Data download:
 
 ------------------------------------------------------------------
 
-Displaying LabelMe annotations on top of images:
+#### Displaying LabelMe annotations on top of images:
 
 Download: 
 [LabelMe Matlab toolbox](http://labelme2.csail.mit.edu/Release3.0/browserTools/php/matlab_toolbox.php)
@@ -32,7 +32,7 @@ But run the LMplot provided in this directory instead of the one in the LabelMe 
 
 ------------------------------------------------------------------
 
-Using the allImages structure:
+#### Using the allImages structure:
 
 After downloading the 'Targets' directory, to display an image:
 ```
@@ -80,6 +80,8 @@ will have empty fields.
 
 ------------------------------------------------------------------
 
+#### Recomputing fixation maps:
+
 To recreate fixation maps and fixation locations maps per image using the 
 allImages structure:
 
@@ -92,7 +94,7 @@ https://github.com/cvzoya/saliency/blob/master/code_forVisualizations
 
 ------------------------------------------------------------------
 
-Retrieving the original images:
+#### Retrieving the original images and annotations:
 
 Example image: Targets/airport_terminal/sun_aabkzjntjfarengi.jpg
 
