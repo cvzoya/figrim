@@ -113,7 +113,7 @@ The original full-sized image can be found at:
 http://labelme.csail.mit.edu/Images/users/antonio/static_sun_database/a/airport_terminal/sun_aabkzjntjfarengi.jpg
 
 The LabelMe annotations for this image can be found at:
-http://labelme.csail.mit.edu/Release3.0/tool.html?actions=v&folder=users/antonio/static_sun_database/a/airport_terminal/sun_aabkzjntjfarengi.jpg
+http://labelme.csail.mit.edu/Release3.0/tool.html?actions=v&folder=users/antonio/static_sun_database/a/airport_terminal&image=sun_aabkzjntjfarengi.jpg
 
 Example to download images and annotations from LabelMe and save them into a struct:
 ```
