@@ -8,40 +8,56 @@ Zoya Bylinskii, Phillip Isola, Constance Bainbridge, Antonio Torralba, Aude Oliv
 Project page: http://figrim.mit.edu
 
 ------------------------------------------------------------------
+Data download:
+
+[630 target images](http://figrim.mit.edu/Targets.zip)
+[Fixation maps](http://figrim.mit.edu/FIXATIONMAPS.zip)
+[Fixation locations](http://figrim.mit.edu/FIXATIONLOCS.zip)
+[Annotation structure](https://github.com/cvzoya/figrim/blob/master/allImages_release.mat)
+
+------------------------------------------------------------------
 
 Displaying LabelMe annotations on top of images:
 
 Download: 
-(1) labelme2.csail.mit.edu/Release3.0/browserTools/php/matlab_toolbox.php
-(2) www.mathworks.com/matlabcentral/fileexchange/29702-generate-maximally-perceptually-distinct-colors
-
-Then add both to the Matlab path.
+[LabelMe Matlab toolbox](http://labelme2.csail.mit.edu/Release3.0/browserTools/php/matlab_toolbox.php)
+[distinguishable_colors.m](www.mathworks.com/matlabcentral/fileexchange/29702-generate-maximally-perceptually-distinct-colors)
 
 But run the LMplot provided in this directory instead of the one in the LabelMe toolbox.
 
+```
 >> im = imread(allImages(i).impath);
 >> LMplot(allImages(i).annotation,im);
+```
 
 ------------------------------------------------------------------
 
 Using the allImages structure:
 
 After downloading the 'Targets' directory, to display an image:
+```
 >> imshow(allImages(i).impath)
+```
 
 Computing the memorability score (HR) using the MTurk (AMT) data:
+```
 >> a = allImages(i).AMT_comb;
 >> HR = a.hits/(a.hits+a.misses)
+```
 
 The encoding fixations of the j-th participant on the i-th image:
+```
 >> allImages(i).userdata(j).fixations.enc
+```
 
 Note: each image was shown to participants 3 times, denoted: encoding (enc), 
 recognition (rec), second recognition (rec2). If recorded successfully for 
 a particular participant, fixations may be available for any or all of these 3 times.
 
 The (keypress) responses of the j-th participant on the i-th image:
+```
 >> allImages(i).userdata(j).SDT
+```
 
 Note: SDT is a 3-element vector corresponding to the recorded responses 
 ('signal detections') of the participant on the encoding, recognition, 
@@ -54,7 +70,9 @@ The SDT values are as follows:
 4 = correct rejection
 
 So, the j-th participant recognized the i-th image on the second presentation if:
+```
 >> allImages(i).userdata(j).SDT(2) == 1
+```
 
 Note: the j-th participant is the same for all images, so if participant j 
 did not see image i during the experimental setting, allImages(i).userdata(j)
@@ -88,10 +106,12 @@ The LabelMe annotations for this image can be found at:
 http://labelme.csail.mit.edu/Release3.0/tool.html?actions=v&folder=users/antonio/static_sun_database/a/airport_terminal/sun_aabkzjntjfarengi.jpg
 
 Example to download images and annotations from LabelMe and save them into a struct:
+```
 >> folderlist = {'users/antonio/static_sun_database/a/airport_terminal','users/antonio/static_sun_database/b/badlands'};
 >> HOMEIMAGES = 'ImageDir'; HOMEANNOTATIONS = 'AnnotDir';
 >> LMinstall(folderlist,HOMEIMAGES,HOMEANNOTATIONS);
 >> D = LMdatabase(HOMEANNOTATIONS,HOMEIMAGES,folderlist);
+```
 
 Hint: The LabelMe toolbox function 'LMimresizecrop' can be used to resize the image and annotations jointly.
 (see also 'LMvalidobjects' and 'addcroplabel')
