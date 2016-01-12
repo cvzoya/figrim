@@ -11,8 +11,11 @@ Project page: http://figrim.mit.edu
 #### Data download:
 
 [630 target images](http://figrim.mit.edu/Targets.zip)
+
 [Fixation maps](http://figrim.mit.edu/FIXATIONMAPS.zip)
+
 [Fixation locations](http://figrim.mit.edu/FIXATIONLOCS.zip)
+
 [Annotation structure](https://github.com/cvzoya/figrim/blob/master/allImages_release.mat)
 
 ------------------------------------------------------------------
@@ -21,6 +24,7 @@ Project page: http://figrim.mit.edu
 
 Download: 
 [LabelMe Matlab toolbox](http://labelme2.csail.mit.edu/Release3.0/browserTools/php/matlab_toolbox.php)
+
 [distinguishable_colors.m](www.mathworks.com/matlabcentral/fileexchange/29702-generate-maximally-perceptually-distinct-colors)
 
 But run the LMplot provided in this directory instead of the one in the LabelMe toolbox.
