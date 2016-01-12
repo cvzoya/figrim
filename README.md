@@ -10,24 +10,25 @@ Project page: http://figrim.mit.edu
 ------------------------------------------------------------------
 #### Data download:
 
-[630 target images](http://figrim.mit.edu/Targets.zip)
+630 target images: [Targets.zip](http://figrim.mit.edu/Targets.zip)
 
-[Fixation maps](http://figrim.mit.edu/FIXATIONMAPS.zip)
+Fixation maps: [FIXATIONMAPS.zip](http://figrim.mit.edu/FIXATIONMAPS.zip)
 
-[Fixation locations](http://figrim.mit.edu/FIXATIONLOCS.zip)
+Fixation locations: [FIXATIONLOCS.zip](http://figrim.mit.edu/FIXATIONLOCS.zip)
 
-[Annotation structure](https://github.com/cvzoya/figrim/blob/master/allImages_release.mat)
+Annotation structure: [allImages_release.mat](https://github.com/cvzoya/figrim/blob/master/allImages_release.mat)
 
 ------------------------------------------------------------------
 
 #### Displaying LabelMe annotations on top of images:
 
 Download: 
+
 [LabelMe Matlab toolbox](http://labelme2.csail.mit.edu/Release3.0/browserTools/php/matlab_toolbox.php)
 
 [distinguishable_colors.m](www.mathworks.com/matlabcentral/fileexchange/29702-generate-maximally-perceptually-distinct-colors)
 
-But run the LMplot provided in this directory instead of the one in the LabelMe toolbox.
+But run the [LMplot.m](https://github.com/cvzoya/figrim/blob/master/LMplot.m) provided in this directory instead of the one in the LabelMe toolbox.
 
 ```
 >> im = imread(allImages(i).impath);
@@ -38,7 +39,7 @@ But run the LMplot provided in this directory instead of the one in the LabelMe 
 
 #### Using the allImages structure:
 
-After downloading the 'Targets' directory, to display an image:
+After downloading the [Targets.zip](http://figrim.mit.edu/Targets.zip), to display an image:
 ```
 >> imshow(allImages(i).impath)
 ```
@@ -68,9 +69,9 @@ Note: SDT is a 3-element vector corresponding to the recorded responses
 and second recognition image repetitions.
 
 The SDT values are as follows:
-1 = hit
-2 = false alarm
-3 = miss
+1 = hit;
+2 = false alarm;
+3 = miss;
 4 = correct rejection
 
 So, the j-th participant recognized the i-th image on the second presentation if:
@@ -89,12 +90,15 @@ will have empty fields.
 To recreate fixation maps and fixation locations maps per image using the 
 allImages structure:
 
-(1) download:
-https://github.com/cvzoya/saliency/blob/master/code_forMetrics/antonioGaussian.m
-https://github.com/cvzoya/saliency/blob/master/code_forMetrics/run_antonioGaussian.m
-https://github.com/cvzoya/saliency/blob/master/code_forVisualizations
+(1) Download:
 
-(2) run the generate_fixMaps.m file provided here
+[antonioGaussian.m](https://github.com/cvzoya/saliency/blob/master/code_forMetrics/antonioGaussian.m)
+
+[run_antonioGaussian.m](https://github.com/cvzoya/saliency/blob/master/code_forMetrics/run_antonioGaussian.m)
+
+[code_forVisualizations](https://github.com/cvzoya/saliency/blob/master/code_forVisualizations)
+
+(2) Run the [generate_fixMaps.m](https://github.com/cvzoya/figrim/blob/master/generate_fixMaps.m) file provided here
 
 ------------------------------------------------------------------
 
@@ -126,12 +130,12 @@ Hint: The LabelMe toolbox function 'LMimresizecrop' can be used to resize the im
 
 Note: the following pairs of images are duplicates:
 
-Targets/highway/sun_bnjxztsvnercygxn.jpg            Targets/highway/sun_bdwttbytrbnqyqsk.jpg
-Targets/conference_room/sun_awjucfvtjllxrtkv.jpg    Targets/conference_room/sun_abpqxslcljhrwmck.jpg
-Targets/highway/sun_byoonkqxghujgvkh.jpg            Targets/highway/sun_bjitfqyiepkgfkks.jpg
-Targets/highway/sun_bwrlzawyknljbhcb.jpg            Targets/highway/sun_auwrraazjwdcjcjg.jpg
-Targets/mountain/sun_boskvwzgsvsyuhll.jpg           Targets/mountain/sun_bgdykfpjgudqpzlu.jpg
-Targets/conference_room/sun_bzagimnxconenicn.jpg    Targets/conference_room/sun_bsccnfecifucnavf.jpg
+Targets/highway/sun_bnjxztsvnercygxn.jpg ~            Targets/highway/sun_bdwttbytrbnqyqsk.jpg
+Targets/conference_room/sun_awjucfvtjllxrtkv.jpg ~   Targets/conference_room/sun_abpqxslcljhrwmck.jpg
+Targets/highway/sun_byoonkqxghujgvkh.jpg ~           Targets/highway/sun_bjitfqyiepkgfkks.jpg
+Targets/highway/sun_bwrlzawyknljbhcb.jpg ~           Targets/highway/sun_auwrraazjwdcjcjg.jpg
+Targets/mountain/sun_boskvwzgsvsyuhll.jpg ~          Targets/mountain/sun_bgdykfpjgudqpzlu.jpg
+Targets/conference_room/sun_bzagimnxconenicn.jpg ~   Targets/conference_room/sun_bsccnfecifucnavf.jpg
 
 
 
