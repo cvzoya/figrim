@@ -96,7 +96,7 @@ allImages structure:
 
 [run_antonioGaussian.m](https://github.com/cvzoya/saliency/blob/master/code_forMetrics/run_antonioGaussian.m)
 
-[code_forVisualizations](https://github.com/cvzoya/saliency/blob/master/code_forVisualizations)
+[code for visualizations](https://github.com/cvzoya/fixation-visualization)
 
 (2) Run the [generate_fixMaps.m](https://github.com/cvzoya/figrim/blob/master/generate_fixMaps.m) file provided here
 
