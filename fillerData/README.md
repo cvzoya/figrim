@@ -16,7 +16,7 @@ Fixation maps: [FIXATIONMAPS_fillers.zip](http://figrim.mit.edu/FIXATIONMAPS_fil
 
 Fixation locations: [FIXATIONLOCS_fillers.zip](http://figrim.mit.edu/FIXATIONLOCS_fillers.zip)
 
-Annotation structure: [allImages_fillers.mat](https://github.com/cvzoya/figrim/blob/master/allImages_fillers.mat)
+Annotation structure: [allImages_fillers.mat](https://github.com/cvzoya/figrim/blob/master/fillerData/allImages_fillers.mat)
 
 ------------------------------------------------------------------
 

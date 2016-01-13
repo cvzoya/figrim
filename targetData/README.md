@@ -16,7 +16,7 @@ Fixation maps: [FIXATIONMAPS.zip](http://figrim.mit.edu/FIXATIONMAPS.zip)
 
 Fixation locations: [FIXATIONLOCS.zip](http://figrim.mit.edu/FIXATIONLOCS.zip)
 
-Annotation structure: [allImages_release.mat](https://github.com/cvzoya/figrim/blob/master/allImages_release.mat)
+Annotation structure: [allImages_release.mat](https://github.com/cvzoya/figrim/blob/master/targetData/allImages_release.mat)
 
 ------------------------------------------------------------------
 
@@ -104,7 +104,7 @@ allImages structure:
 
 #### Retrieving the original images and annotations:
 
-Example image: Targets/airport_terminal/sun_aabkzjntjfarengi.jpg
+Example image: airport_terminal/sun_aabkzjntjfarengi.jpg
 
 Then the corresponding SUN database folder is: a/airport_terminal
 (the first letter of the category name, followed by the category name itself)
