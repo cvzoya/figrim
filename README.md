@@ -5,7 +5,7 @@ If you use this data, please cite:
 Zoya Bylinskii, Phillip Isola, Constance Bainbridge, Antonio Torralba, Aude Oliva.
 "Intrinsic and Extrinsic Effects on Image Memorability", Vision Research (2015)
 
-Project page: http://figrim.mit.edu
+Project page: http://figrim.mit.edu/index_eyetracking.html
 
 ------------------------------------------------------------------
 
